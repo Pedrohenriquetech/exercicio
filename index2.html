@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Práticos - JavaScript</title>
+</head>
+<body>
+    <h1>Exercícios Práticos de JavaScript</h1>
+    
+    <h2>1. Verificação de Maioridade</h2>
+    <script>
+        let idade = prompt("Qual é a sua idade?");
+        if (idade >= 18) {
+            document.write("<p>Você é maior de idade.</p>");
+        } else {
+            document.write("<p>Você é menor de idade.</p>");
+        }
+    </script>
+
+    <h2>2. Cálculo de Desconto</h2>
+    <script>
+        let precoOriginal = parseFloat(prompt("Qual é o preço original do produto?"));
+        let desconto = parseFloat(prompt("Qual é a porcentagem de desconto?"));
+        let valorDesconto = (precoOriginal * desconto) / 100;
+        let precoFinal = precoOriginal - valorDesconto;
+        document.write("<p>O preço final após o desconto é: R$ " + precoFinal.toFixed(2) + "</p>");
+    </script>
+
+    <h2>3. Conversão de Moeda</h2>
+    <script>
+        let reais = parseFloat(prompt("Qual valor em reais você deseja converter para dólares?"));
+        let cotacao = 5.00;
+        let dolares = reais / cotacao;
+        document.write("<p>R$ " + reais + " é equivalente a " + dolares.toFixed(2) + " USD.</p>");
+    </script>
+
+</body>
+</html>
