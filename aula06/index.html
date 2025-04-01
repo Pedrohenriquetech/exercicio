@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 06 – JavaScript Básico</title>
+</head>
+<body>
+
+<h1>Atividade 06 – JavaScript Básico</h1>
+<script>
+// Parte 2: Exercícios Práticos
+
+// 8
+let nome = prompt("Qual é o seu nome?");
+document.write("<h2>Olá, " + nome + "! Seja bem-vindo(a).</h2>");
+
+// 9
+let celsius = prompt("Digite a temperatura em Celsius:");
+let fahrenheit = (celsius * 9/5) + 32;
+document.write("<p>Temperatura em Fahrenheit: " + fahrenheit + "°F</p>");
+
+//10
+let num1 = Number(prompt("Digite o primeiro número:"));
+let num2 = Number(prompt("Digite o segundo número:"));
+
+document.write("<h3>Calculadora</h3>");
+document.write("Soma: " + (num1 + num2) + "<br>");
+document.write("Subtração: " + (num1 - num2) + "<br>");
+document.write("Multiplicação: " + (num1 * num2) + "<br>");
+document.write("Divisão: " + (num1 / num2) + "<br>");
+
+let idade = prompt("Qual a sua idade?");
+if (idade >= 18) {
+  document.write("<p>Você é <strong>maior</strong> de idade.</p>");
+} else {
+  document.write("<p>Você é <strong>menor</strong> de idade.</p>");
+}
+
+let preco = Number(prompt("Digite o preço do produto:"));
+let desconto = Number(prompt("Digite a porcentagem de desconto:"));
+
+let valorDesconto = preco * (desconto / 100);
+let precoFinal = preco - valorDesconto;
+
+document.write("<p>Preço final com desconto: R$ " + precoFinal.toFixed(2) + "</p>");
+
+let reais = Number(prompt("Digite o valor em reais (BRL):"));
+let cotacao = 5.00; 
+let dolares = reais / cotacao;
+
+document.write("<p>Valor em dólares (USD): $" + dolares.toFixed(2) + "</p>");
+
+</script>
+</body>
+</html>
